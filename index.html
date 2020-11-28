@@ -16,81 +16,182 @@
 
 
 <body>
+    <header class="jumbotron jumbotron-fluid text-center text-light">
+        <h1>Welcome to Bay Aristocrat Village</h1>
+        <h2>A Hidden Gem on Old Tampa Bay </h2>
+        <div>
+            <img src="img/basin3.png" class="mx-auto d-block w-100" alt="BAV Basin">
+        </div>
+    </header>
 
-    <div class="text-center">
-        <img src="img/basin.png" class="rounded mx-auto d-block" alt="BAV Basin">
-    </div>
-
-
-    <nav class="navbar navbar-expand-sm sticky-top">
+    <nav class="navbar navbar-expand-sm">
+        <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="rules.html">Rules and Regulations</a></li>
         </ul>
+           <span class="navbar-text ml-auto">
+                <a button role="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#loginModal">
+                Resident Login
+                </a>
+            </span>
+        </div>
     </nav>
 
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginEmail">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                    placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div class="col card w-25">
-                <h6>Why live here?</h6>
-                <ul>
-                    <li>100% resident-owned</li>
-                    <li>Stable monthly maintenance fees</li>
-                    <li>Nestled away next to Old Tampa Bay</li>
-                    <li>Within 30 min of both airports</li>
-                    <li>Within 10 min of Clearwater Mall, US 19 and SR 60</li>
-                    <li>Boat storage and launch</li>
-                    <li>Friendly, active community</li>
-                    <li>No short-term rentals</li>
-                </ul>
-            </div>
-        
+            <div class="col-xs card w-50 col-md w-25">
+                <div id="accordion1">
+                    <div class="card-header bg-primary" id="why">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-primary btn-lg btn-block text-light active"
+                                data-toggle="collapse.show" data-target="#why" aria-expanded="true" aria-controls="why">
+                                Why Live Here?
+                            </button>
+                        </h5>
+                    </div>
 
-            <div class="col card w-25">
-                <h6>What's included in the monthly fee?</h6>
-                <ul>
-                    <li>Water, sewer, garbage</li>
-                    <li>Grounds, pool and street maintenance</li>
-                    <li>Lawn mowing and trimming</li>
-                    <li>Private library stocked with books, puzzles, DVD's </li>
-                    <li>Private fishing docks on the bay</li>
-                    <li>Professional management</li>
-                    
-                </ul>
+                    <div id="why" class="collapsed" aria-labelledby="why" data-parent="#accordion1">
+                        <div class="card-body">
+                            <ul>
+                                <li>100% resident-owned</li>
+                                <li>Stable monthly maintenance fees</li>
+                                <li>Nestled away next to Old Tampa Bay</li>
+                                <li>Within 30 min of both airports</li>
+                                <li>Within 10 min of Clearwater Mall, US 19 and SR 60</li>
+                                <li>Boat storage and launch</li>
+                                <li>Friendly, active community</li>
+                                <li>No short-term rentals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-    
-            <div class="col card w-25 ">
-                <h6>Fun? Games? We have that.</h6>
-                <ul>
-                    <li>Year-round heated pool</li>
-                    <li>Shuffleboard court and leagues</li>
-                    <li>Bingo, cards and pool table</li>
-                    <li>Water Aerobics</li>
-                    <li>Arts & Crafts (kiln, classes)</li>
-                    <li>Leagues for Bowling and Golf</li>
-                    <li>Picnics, dances and holiday parties </li>
-                    <li>Christmas golf cart parade</li>
-                </ul>
-            </div>
-    
+            <div class="col-xs card w-50 col-md w-25">
+                <div id="accordion2">
 
-            <div class="col card-25">
-                <h6>Nature? We have that, too.</h6>
-                    <ul>
-                        <li>Dolphins</li>
-                        <li>Manatees</li>
-                        <li>Birds, including eagles, ospreys and pelicans</li>
-                        <li>Lovely landscaping </li>
-                        <li>Parks on the Bay for peace and quiet</li>
-                        <li>Beautiful sunrises over the Old Tampa Bay</li>
-                    </ul>
+                    <div class="card-header bg-info" id="includes">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-info btn-lg btn-block text-light active"
+                                data-toggle="collapse.show" data-target="#includes" aria-expanded="true"
+                                aria-controls="includes">
+                                What's Included?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="includes" class="collapsed" aria-labelledby="includes" data-parent="#accordion2">
+                        <div class="card-body">
+                            Your monthly maintenance fee includes:
+                            <ul>
+                                <li>Water, sewer, garbage</li>
+                                <li>Grounds, pool and street maintenance</li>
+                                <li>Lawn mowing and trimming</li>
+                                <li>Private library stocked with books, puzzles, DVD's </li>
+                                <li>Private fishing docks on the bay</li>
+                                <li>Professional management</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div>   
-</div>    
+
+            <div class="col-xs card w-50 col-md w-25">
+                <div id="accordion3">
+
+                    <div class="card-header bg-danger" id="fun">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-danger btn-lg btn-block text-light active"
+                                data-toggle="collapse.show" data-target="#fun" aria-expanded="true" aria-controls="fun">
+                                Fun? We have that.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="fun" class="collapsed" aria-labelledby="fun" data-parent="#accordion3">
+                        <div class="card-body">
+                            <ul>
+                                <li>Year-round heated pool</li>
+                                <li>Shuffleboard court and leagues</li>
+                                <li>Bingo, cards and pool table</li>
+                                <li>Water Aerobics</li>
+                                <li>Arts & Crafts (kiln, classes)</li>
+                                <li>Leagues for Bowling and Golf</li>
+                                <li>Picnics, dances and holiday parties </li>
+                                <li>Christmas golf cart parade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs card w-50 col-md w-25">
+                <div id="accordion4">
+                    <div class="card-header bg-success" id="nature">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link btn-success btn-lg btn-block text-light active"
+                                data-toggle="collapse.show" data-target="#nature" aria-expanded="true"
+                                aria-controls="nature">
+                                Nature? Of Course.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="nature" class="collapsed" aria-labelledby="nature" data-parent="#accordion4">
+                        <div class="card-body">
+                            <ul>
+                                <li>Dolphins</li>
+                                <li>Manatees</li>
+                                <li>Birds, including eagles, ospreys and pelicans</li>
+                                <li>Lovely landscaping </li>
+                                <li>Parks on the Bay for peace and quiet</li>
+                                <li>Beautiful sunrises over the Old Tampa Bay</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -99,11 +200,53 @@
         <div class="container">
             <div class="row">
                 <div class="col col-6">
+
+                    <a button role="button" class="btn btn-lg btn-dark text-warning" data-toggle="modal"
+                        data-target="#contactModal">
+                        Contact Form
+                    </a>
+
+                    <div class="modal" id="contactModal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark">Contact Us</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-12">
+                                                <label class="sr-only" for="contactEmail">Email address</label>
+                                                <input type="email" class="form-control form-control-sm"
+                                                    id="contactEmail" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label class="sr-only" for="contactPhone">Phone Number</label>
+                                                <input type="telephone" class="form-control form-control-sm"
+                                                    id="contactPhone" placeholder="Phone Number">
+                                            </div>
+                                            <div class="col">
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Send</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="align-self-center">Contact Info:</p>
                     <ul>
-                        <li>Contact info:</li>
                         <li>Office hours 9-3 M-F </li>
                         <li>Phone 727-531-4906</li>
-                        <li>email:</li>
+
                     </ul>
                 </div>
 
@@ -111,9 +254,15 @@
                     Search properties on:
                     <ul>
                         <li>Clubhouse Bulletin Board</li>
-                        <li>Zillow</li>
-                        <li>Realtor.com</li>
-                        <li>MLS</li>
+                        <li>Many local realtors</li>
+                        <li><a href="https://www.zillow.com/homes/Bay-Aristocrat-Village,-Clearwater,-FL_rb/">Zillow</a>
+                        </li>
+                        <li><a
+                                href="https://www.realtor.com/realestateandhomes-search/Bay-Aristocrat-Village_Clearwater_FL">Realtor.com</a>
+                        </li>
+                        <li><a
+                                href="https://www.mhvillage.com/parks/5947">MH Village</a>
+                        </li>
 
                     </ul>
                 </div>

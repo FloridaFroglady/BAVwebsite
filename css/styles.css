@@ -1,25 +1,36 @@
-.jumbotron {
-    background-color:#005a9c;
-    margin: 0;
-    }
 
+.jumbotron{
+    background-color: #005a9c;
+}
     body {
         font-family: Saira Condensed, sans-serif;
         background-color: #fffffc;
+    
     }
 
     .navbar {
         font-family: Saira Condensed, sans-serif;
         font-weight: bolder;
         font-size: 20px;
-        background-color:#d4af37;
-        color:#005a9c
-        
+        font-color: #d4af37;
+        background-color: #005a9c;
+     }
 
-        
-    }
 
     footer {
         background-color: #005a9c;
         color: #fffffc;
+         }
+    a:visited {
+        color:#d4af37;
     }
+    p {
+        font-size: 18px;
+        font-weight: heavy;
+        color: #fffffc;
+        padding-top: 10px;
+    }
+    
+   
+   
+    
