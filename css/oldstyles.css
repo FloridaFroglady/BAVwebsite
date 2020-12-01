@@ -1,0 +1,55 @@
+
+.jumbotron{
+    background-color: #005a9c;
+}
+    body {
+        font-family: Saira Condensed, sans-serif;
+        background-color: #fffffc;
+    
+    }
+
+    .navbar {
+        font-family: Saira Condensed, sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        color:#005a9c;
+        background-color:#d4af37;
+     }
+
+     navbar a:link {
+         color:#005a9c;
+     }
+
+     navbar a:visited {
+         color:#005a9c;
+     }
+
+    footer {
+        background-color: #005a9c;
+        color: #fffffc;
+    }
+        
+    /* unvisited link */
+    footer    a:link {
+    color:#fffffc;
+    }
+
+
+    /* visited link */
+     footer a:visited {
+    color: #fffffc;
+    }
+    
+       
+       
+   
+    p {
+        font-size: 18px;
+        font-weight: heavy;
+        color: #fffffc;
+        padding-top: 10px;
+    }
+    
+   
+   
+    

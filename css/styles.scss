@@ -1,0 +1,84 @@
+$color-deep: #005A9C;
+$color-rich: #D4AF37;
+$color-bright: #0EB1D2;
+$color-citrus: #F55536;
+$color-leaf: #1bc70b;
+$color-accent: #fffffc;
+
+$body-font: "Saira Condensed", sans-serif;
+$header-font: "Saira Condensed", sans-serif;
+$footer-font: "Saira Condensed", sans-serif;
+
+.jumbotron {
+    background-color: $color-bright;
+}
+
+header {
+    font-weight: bolder;
+}
+.navbar {
+        background-color: $color-citrus;
+        color: $color-deep;
+        font-family: $body-font;
+        font-weight: bold;
+        font-size: 24px;
+        
+     a:link {
+         color: $color-deep;
+     }
+
+    a:visited {
+         color: $color-deep;
+        }
+    }
+   
+
+
+    
+body {
+        font-family: $body-font;
+        background-color: $color-accent;
+    }
+
+footer {            
+    background-color: $color-deep;
+    color: $color-accent;
+    font-family: $body-font;
+    font-weight: heavy;
+    font-size: 16px;
+    a:link {
+        color: $color-accent;
+            }
+
+    a:visited {
+    color: $color-accent;
+        }
+    }
+        
+p {
+        font-size: 18px;
+        font-weight: heavy;
+        color: $color-accent;
+        padding-top: 10px;
+}
+
+
+
+
+#contactModal{
+    .modal-header{
+        background-color: $color-rich;
+        color: black;
+    }
+}
+
+#loginModal{
+    .modal-header{
+        background-color: $color-leaf;
+        color: white;
+    }
+}
+
+
+
+

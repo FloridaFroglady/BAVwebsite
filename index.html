@@ -17,27 +17,28 @@
 
 <body>
     <header class="jumbotron jumbotron-fluid text-center text-light">
-        <h1>Welcome to Bay Aristocrat Village</h1>
-        <h2>A Hidden Gem on Old Tampa Bay </h2>
         <div>
             <img src="img/basin3.png" class="mx-auto d-block w-100" alt="BAV Basin">
         </div>
-    </header>
+        <h1 class="align-middle">Welcome to Bay Aristocrat Village</h1>
+        <h2 class="align-bottom">A Hidden Gem on Old Tampa Bay</h2>
+        <a role="button" class="btn btn-lg btn-primary" type="button" data-toggle="modal"
+            data-target="loginModal">Resident Login</a>
+    
 
-    <nav class="navbar navbar-expand-sm">
-        <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="rules.html">Rules and Regulations</a></li>
-        </ul>
-           <span class="navbar-text ml-auto">
-                <a button role="button" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#loginModal">
-                Resident Login
-                </a>
-            </span>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-item nav-link" href="rules.html">Rules and Regulations</a>
+            </div>
         </div>
     </nav>
+</header>
 
     <div class="modal" id="loginModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -260,8 +261,7 @@
                         <li><a
                                 href="https://www.realtor.com/realestateandhomes-search/Bay-Aristocrat-Village_Clearwater_FL">Realtor.com</a>
                         </li>
-                        <li><a
-                                href="https://www.mhvillage.com/parks/5947">MH Village</a>
+                        <li><a href="https://www.mhvillage.com/parks/5947">MH Village</a>
                         </li>
 
                     </ul>

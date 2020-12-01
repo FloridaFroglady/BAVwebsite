@@ -1,36 +1,45 @@
+.jumbotron {
+  background-color: #0EB1D2; }
 
-.jumbotron{
-    background-color: #005a9c;
-}
-    body {
-        font-family: Saira Condensed, sans-serif;
-        background-color: #fffffc;
-    
-    }
+header {
+  font-weight: bolder; }
 
-    .navbar {
-        font-family: Saira Condensed, sans-serif;
-        font-weight: bolder;
-        font-size: 20px;
-        font-color: #d4af37;
-        background-color: #005a9c;
-     }
+.navbar {
+  background-color: #F55536;
+  color: #005A9C;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 24px; }
+  .navbar a:link {
+    color: #005A9C; }
+  .navbar a:visited {
+    color: #005A9C; }
 
+body {
+  font-family: "Saira Condensed", sans-serif;
+  background-color: #fffffc; }
 
-    footer {
-        background-color: #005a9c;
-        color: #fffffc;
-         }
-    a:visited {
-        color:#d4af37;
-    }
-    p {
-        font-size: 18px;
-        font-weight: heavy;
-        color: #fffffc;
-        padding-top: 10px;
-    }
-    
-   
-   
-    
+footer {
+  background-color: #005A9C;
+  color: #fffffc;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: heavy;
+  font-size: 16px; }
+  footer a:link {
+    color: #fffffc; }
+  footer a:visited {
+    color: #fffffc; }
+
+p {
+  font-size: 18px;
+  font-weight: heavy;
+  color: #fffffc;
+  padding-top: 10px; }
+
+#contactModal .modal-header {
+  background-color: #D4AF37;
+  color: black; }
+
+#loginModal .modal-header {
+  background-color: #1bc70b;
+  color: white; }
